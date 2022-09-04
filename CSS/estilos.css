@@ -1,6 +1,47 @@
-header div  {
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@300&display=swap');
+*   {
+    font-family: 'Jost', sans-serif;
+    box-sizing: border-box;
+}
+.header{
     background-color:rgb(52, 58, 64);
+    color: white;
+    padding: 5px;
+    margin: 0px;
 }
-.bgGrisClaro    {
-    background-color: darkgrey;
+.img  {
+    width: 100px;
 }
+.link  {
+color: white;
+text-decoration: none;
+}
+.main   {
+    color: rgb(92, 89, 89);
+    padding: 10px;
+}
+.imgg   {
+    width: 1300px;
+}
+.imggg   {
+    width: 600px;
+}
+.conoce_mas {
+    color: white;
+    background-color:rgb(52, 58, 64) ;
+}
+.footer {
+    background-image: linear-gradient(to right, #051937, #001b47, #001d56, #011c65, #151a72);
+    padding: 20px;
+    text-align: center;
+}
+.orador   {
+    padding: 1px;
+    text-align: center;
+}
+.formulario     {
+    text-align: center;
+    padding: 2px;
+    margin: 20px;
+}
+

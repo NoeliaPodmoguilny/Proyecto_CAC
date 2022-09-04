@@ -9,29 +9,34 @@
         <link rel="stylesheet" href="./CSS/estilos.css">
     </head>
     <body>
-        <header>
+        <header class="header">
             <div>
-                <img src="./Assets/Imagenes/codoacodo.png" alt="logo codo a codo" loading="lazy">
+                <img class="img" src="./Assets/Imagenes/codoacodo.png" alt="logo codo a codo" loading="lazy">
                 <h2>Conf. Bs. As.</h2>
             </div>
             <nav>
-                <a href="#">La Conferencia</a>
-                <a href="./Pages/los_oradores.html">Los Oradores</a>
-                <a href="./Pages/lugar_y_fecha.html">Lugar y Fecha</a>
-                <a href="./Pages/contacto.html">Conviértete en Orador</a>
-                <a href="./Pages/comprar_ticket.html">Comprar Tickets</a>
+                <a class="link" href="#">La Conferencia</a>
+                <a class="link" href="./Pages/los_oradores.html">Los Oradores</a>
+                <a class="link" href="./Pages/lugar_y_fecha.html">Lugar y Fecha</a>
+                <a class="link" href="./Pages/contacto.html">Conviértete en Orador</a>
+                <a class="link" href="./Pages/comprar_ticket.html">Comprar Tickets</a>
             </nav>
         </header>
-    <main>
+        <main class="main">
+            <section >
+                <img class="imgg" src="./Assets/Imagenes/palacio_aguas.jpg" alt="Palacio de aguas" loading="lazy">
+                <h1>Conferencia de Buenos Aires</h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque labore quae minus exercitationem porro quos explicabo vel provident, ad nihil a voluptatum vitae natus delectus. Similique accusantium esse laborum placeat.</p>
+                <a class="link" href="./Pages/contacto.html">Quiero ser Orador</a>
+                <a class="link" href="./Pages/comprar_ticket.html">Comprar ticket</a>
+            </section>
+        </main>
+    <br><br>
         <section>
-            <img src="./Assets/Imagenes/palacio_aguas.jpg" alt="Palacio de aguas" loading="lazy">
-            <h1>Conferencia de Buenos Aires</h1>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque labore quae minus exercitationem porro quos explicabo vel provident, ad nihil a voluptatum vitae natus delectus. Similique accusantium esse laborum placeat.</p>
-            <a href="./Pages/contacto.html">Quiero ser Orador</a>
-            <a href="./Pages/comprar_ticket.html">Comprar ticket</a>
-        </section>
-    </main>
-        <section class="bgGrisClaro">
+            <div class="orador">
+            <h5>Conoce a los</h5>
+            <h2>ORADORES</h2>
+            </div>
             <div>
             <img src="./Assets/Imagenes/steve.jpg" alt="Steve Jobs" loading="lazy"width="300">
             <h3>Steve Jobs</h3>
@@ -52,128 +57,42 @@
 
         </section>
 
-        <section>
-            <img src="./Assets/Imagenes/honolulu.jpg" alt="Imagen de Honolulu">
-            <div class="bgGrisClaro">
-              <h3>Buenos Aires Ocubre</h3>  
+        <section class="conoce_mas">
+            <img class="imggg" src="./Assets/Imagenes/honolulu.jpg" alt="Imagen de Honolulu">
+            <div>
+              <h3>Buenos Aires - Ocubre</h3>  
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore fuga facilis expedita deleniti laborum laudantium obcaecati vitae, ratione doloribus in vero commodi blanditiis at corporis reprehenderit. Fuga cum ipsam sint?</p>
-              <a href="">Conoce más</a>
+              <a class="link" href="">Conoce más</a>
             </div>
         </section>
         <br><br>
+            <div class="orador">
+                <h5>Conviértete en un</h5>
+                <h2>ORADOR</h2>
+                <p>Anótate como orador para dar una charla ignite. Cuéntanos de qué quieres hablar!</p>
+            </div>
         <section>
-        <!-- Ver enlaces internos-->
-        <table>
-            <thead>
-                <tr>
-                    <th>Orador</th>
-                    <th>Dia</th>
-                    <th>Horario</th>
-                </tr>
-            </thead>
-            <tbody>
-            <tr>
-                <td>Steve Jobs</td>
-                <td>Lunes a Miercoles</td>
-                <td>18:30 hs a 21:00 hs</td>
-            </tr>
-            <tr>
-                <td>Bill Gates</td>
-                <td>Martes y Jueves</td>
-                <td>18:30 hs a 21:00 hs</td>
-            </tr>
-            <tr>
-                <td>Ada Lovelace</td>
-                <td>Miercoles y Viernes</td>
-                <td>10:30 hs a 12:00 hss</td>
-            </tr> 
-        </tbody>
-        <tfoot>
-            <tr>
-                <td colspan:"3"> <a href="">Sacar Entrada</a> </td>
-            </tr>
-        </tfoot>        
-        </table>
-        </section>
-        <br><br>
-        <section>
-            <form action="">
+            <form class="formulario" action="">
                 <input type="text" placeholder="Nombre">
                 <input type="text" placeholder="Apellido">
                 <div>
-                    <div>
-                        <label for="">Email</label>
-                        <input type="email">
-                    </div>
-                    <div>
-                        <label for="">Deje su contraseña</label>
-                        <input type="password">
-                    </div>
                     <textarea name="" id="" cols="45" rows="10" placeholder="Sobre qué quieres hablar?"></textarea>
                 </div>
                 <p>Recuerda incluir un título para tu carla</p>
                 <div>
-                    <p>Indique su provincia</p>
-                    <select>
-                        <option value="" selected>seleccione una opcion</option>
-                        <option value="Caba">Capital Federal</option>
-                        <option value="Buenos Aires" >Bs. As.</option>
-                        <option value="Catamarca">Catamarca</option>
-                        <option value="Chaco" >Chaco</option>
-                        <option value="Chubut">Chubut</option>
-                        <option value="Cordoba">Cordoba</option>
-                        <option value="Corrientes">Corrientes</option>
-                        <option value="Entre Rios" >Entre Rios</option>
-                        <option value="Formosa">Formosa</option>
-                        <option value="Jujuy">Jujuy</option>
-                        <option value="La Pampa">La Pampa</option>
-                        <option value="La Rioja">La Rioja</option>
-                        <option value="Mendoza">Mendoza</option>
-                        <option value="Misiones">Misiones</option>
-                        <option value="Neuquen">Neuquen</option>
-                        <option value="Rio Negro">Rio Negro</option>
-                        <option value="Salta">Salta</option>
-                        <option value="San Juan">San Juan</option>
-                        <option value="San Luis">San Luis</option>
-                        <option value="Santa Cruz">Santa Cruz</option>
-                        <option value="Santa Fe">Santa Fe</option>
-                        <option value="Sgo. del Estero">Sgo. del Estero</option>
-                        <option value="Tierra del Fuego">Tierra del Fuego</option>
-                        <option value="Tucuman">Tucuman</option>
-                    </select>
-                </div>
-                <br>
-                <div>
-                    <p>Términos y condiciones</p>
-                    <input type="checkbox" name="términos">
-                </div>
-                <div>
-                    <input type="submit" value="Enviar Formulario">
+                    <input type="submit" value="Enviar">
                     <input type="reset" value="Limpiar">
                 </div>
             </form>
         </section>
-        <br><br>
-
-        <aside>
-            <h2>Acá va la propaganda</h2>
-            <img src="" alt="Propaganda">
-        </aside>
-        <br><br>
-        <article>
-            <header> Header de la noticia</header>
-            <h1>Titulo principal de la noticia</h1>
-            <footer>Este es el footer o conclusion o pie de pagina de la noticia</footer>
-        </article>
-
-        <footer>
-            <a href="">Preguntas Frecuentes</a>
-            <a href="">Contáctanos</a>
-            <a href="">Prensa</a>
-            <a href="">Conferencias</a>
-            <a href="">Términos y condiciones</a>
-            <a href="">Privacidad</a>
-            <a href="">Estudiantes</a>
-        </footer>
+            <footer class="footer">
+                <a class="link" href="">Preguntas Frecuentes</a>
+                <a class="link" href="">Contáctanos</a>
+                <a class="link" href="">Prensa</a>
+                <a class="link" href="">Conferencias</a>
+                <a class="link" href="">Términos y condiciones</a>
+                <a class="link" href="">Privacidad</a>
+                <a class="link" href="">Estudiantes</a>
+            </footer>
     </body>
 </html>
